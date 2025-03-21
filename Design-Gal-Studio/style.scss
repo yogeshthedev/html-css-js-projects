@@ -235,79 +235,196 @@ a {
     flex-direction: column;
     gap: 1rem;
 
-    .card-2:nth-child(3) .top{
-        background-color: #C71E70;
+    .card-2:nth-child(3) .top {
+        background-color: #c71e70;
     }
 
-    .card-2:nth-child(4) .top{
-        background-color: #0081C6;
+    .card-2:nth-child(4) .top {
+        background-color: #0081c6;
     }
-   
+
     .card-1 {
         padding: 1.6rem 1.6rem;
-        background-color:#FAEBC5 ;
+        background-color: #faebc5;
         border-radius: 1rem;
         position: relative;
         overflow: hidden;
 
-        .title{
+        .title {
             width: 80%;
             font-size: 1.8rem;
         }
-        .detail{
+        .detail {
             padding-top: 3rem;
         }
 
-        .leaf{
+        .leaf {
             position: absolute;
             top: -1rem;
             right: -1.5rem;
             bottom: 0;
-            svg{
+            svg {
                 width: 8rem;
                 height: 8rem;
             }
         }
     }
 
-    .card-2{
+    .card-2 {
         width: 100%;
-        .top{
+        .top {
             width: 100%;
-   
+
             padding: 1rem 1rem 0 1rem;
             display: flex;
-            background-color: #D3A7F2;
-            border-radius: .4rem;
+            background-color: #d3a7f2;
+            border-radius: 0.4rem;
             justify-content: space-between;
-            img{
+            img {
                 width: 100%;
-                border-radius: 1rem 1rem 0 0 ;
+                border-radius: 1rem 1rem 0 0;
             }
-            .img1{
+            .img1 {
                 width: 100%;
                 aspect-ratio: 9/7.6;
                 object-position: center top;
                 object-fit: cover;
-                
             }
-            .img2{
-             display: none;
+            .img2 {
+                display: none;
             }
         }
-        .bottom{
+        .bottom {
             display: none;
-        
         }
     }
-
-   
 }
 
-footer{
-    p{
+.view-3 {
+    padding: 4rem 0;
+
+    .content {
+        background-color: #faebc5;
+        border-radius: 1rem;
+        padding: 2rem 1rem;
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 2rem;
+
+            .title {
+                font-size: 1.6rem;
+                font-weight: 600;
+                text-align: center;
+            }
+
+            .card-gallery {
+                display: grid;
+                gap: 1rem;
+                .card {
+                    padding: 1.8rem 1rem;
+
+                    border-radius: 1rem;
+                    text-align: start;
+                    letter-spacing: 0.6px;
+                }
+                .card:nth-child(1) {
+                    background-color: #feadd2;
+                }
+                .card:nth-child(2) {
+                    background-color: #ffbe81;
+                }
+                .card:nth-child(3) {
+                    background-color: #ffbe81;
+                }
+                .card:nth-child(4) {
+                    background-color: #feadd2;
+                }
+            }
+
+            .botton-txt {
+                text-align: center;
+                width: 75%;
+            }
+        }
+
+        .bottom {
+            margin-top: 4rem;
+
+            .first {
+                display: flex;
+                justify-content: space-between;
+
+                .div {
+                    padding: 1rem 1.5rem;
+                    border-radius: 1.6rem 1.6rem 0 0;
+                    font-weight: 700;
+                }
+
+                .div:nth-child(1) {
+                    background-color: #d8d800;
+                }
+                .div:nth-child(2) {
+                    background-color: #ffdf2b;
+                }
+            }
+            .second{
+                background-color: #d8d800;
+                border-radius: 0 0 1.6rem 1.6rem;
+                .gallery{
+                    display: grid;
+                    grid-template-columns: auto auto ;
+                 
+
+                    .item{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 1rem 2rem;
+                        gap: 1rem;
+                        img{
+                            width: 3rem;
+                        }
+                        .img-title{
+                            font-size: .8rem;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .bottom{
+                    font-weight: 600;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 2rem;
+                    padding: 0 2rem 2rem 2rem;
+                    p{
+                        font-weight: 700;
+                    }
+                    .button{
+                      color: black;
+                      border: 1px solid black;
+                      padding: .8rem 0;
+                      width: 100%;
+                      border-radius: 2rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    p {
         text-align: center;
-        font-size: 2rem ;
+        font-size: 2rem;
         font-weight: 600;
         padding-bottom: 3em;
     }
@@ -438,93 +555,209 @@ footer{
         padding: 2rem 8rem;
         .card-1 {
             padding: 2.4rem 2.6rem;
-            background-color:#FAEBC5 ;
+            background-color: #faebc5;
             border-radius: 1rem;
             position: relative;
             overflow: hidden;
-    
-            .title{
+
+            .title {
                 width: 100%;
                 font-size: 4rem;
             }
-            .detail{
+            .detail {
                 padding-top: 6rem;
                 font-size: 1.3rem;
                 width: 40%;
             }
-    
-            .leaf{
+
+            .leaf {
                 position: absolute;
                 top: -4rem;
                 right: -4rem;
                 bottom: 0;
-                svg{
+                svg {
                     width: 20rem;
                     height: 20rem;
                 }
             }
         }
 
-
-        .card-2{
+        .card-2 {
             width: 100%;
             border-radius: 2rem;
-            .top{
+            .top {
                 width: 100%;
-       
+
                 padding: 3rem 3rem 0 3rem;
                 display: flex;
-               
+
                 border-radius: 1rem;
                 justify-content: space-between;
-                img{
+                img {
                     width: 100%;
-                    border-radius: 1rem 1rem 0 0 ;
+                    border-radius: 1rem 1rem 0 0;
                 }
-                .img1{
+                .img1 {
                     width: 60%;
                     aspect-ratio: 9/7.6;
-                  
-                    
                 }
-                .img2{
+                .img2 {
                     width: 35%;
-                 display: block;
+                    display: block;
                 }
             }
 
-            .bottom{
+            .bottom {
                 display: flex;
-            justify-content: space-between;
-            padding: 1rem 0;
+                justify-content: space-between;
+                padding: 1rem 0;
 
-            .h2{
-                font-weight: 700;
-                font-size: 1.2rem;
-            }
-
-            .work{
-                display: flex;
-                gap: 1rem;
-
-                p{
-                    padding: .8rem 1.4rem;
-                    background-color: #FAEBC5;
-                    border-radius: 2rem;
-                    font-weight: 600;
+                .h2 {
+                    font-weight: 700;
+                    font-size: 1.2rem;
                 }
 
-            }
+                .work {
+                    display: flex;
+                    gap: 1rem;
+
+                    p {
+                        padding: 0.8rem 1.4rem;
+                        background-color: #faebc5;
+                        border-radius: 2rem;
+                        font-weight: 600;
+                    }
+                }
             }
         }
-
     }
 
-    footer{
-        p{
+    .view-3 {
+        padding: 2rem 8rem;
     
-            font-size: 4rem ;
-       
+        .content {
+ 
+            border-radius: 2rem;
+            padding: 6rem 10rem;
+
+    
+            .top {
+          
+                gap: 2rem;
+              
+
+                .heading{
+                    font-size: 1.2rem;
+                }
+    
+                .title {
+                    font-size: 3.6rem;
+                    font-weight: 600;
+                    text-align: center;
+                    width: 50%;
+                }
+    
+                .card-gallery {
+                
+                    gap: 1rem;
+                    grid-template-columns: auto auto;
+                    padding: 0 12rem;
+                
+                    .card {
+                        padding: 1.8rem 1rem;
+                        border-radius: 1rem;
+                        text-align: start;
+                    
+                        letter-spacing: 0.6px;
+                       
+                    }
+                   
+                }
+    
+                .botton-txt {
+                    text-align: center;
+                    width: 30%;
+                    font-size: 1.6rem;
+                    padding-top: 4rem;
+                }
+            }
+    
+            .bottom {
+               
+    
+                .first {
+                    display: flex;
+                   
+                    gap: 2rem;
+    
+                    .div {
+                        width: 100%;
+                        padding: 1rem 1.5rem;
+                        border-radius: 1.6rem 1.6rem 0 0;
+                        font-weight: 700;
+                        text-align: center;
+                        font-size: 2rem;
+                    }
+    
+                   
+                }
+                .second{
+                   
+                    .gallery{
+                        display: grid;
+                        grid-template-columns: auto auto auto;
+                        padding: 4rem 2rem;
+                     
+    
+                        .item{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                            padding: 1rem 2rem;
+                            gap: 2rem;
+                            img{
+                                width: 4rem;
+                            }
+                            .img-title{
+                                width: 60%;
+                                font-size: 1rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+    
+                    .bottom{
+                        padding: 0 4rem 4rem 4rem;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        
+                        p{
+                            font-weight: 700;
+                            font-size: 1.4rem;
+                        }
+                        .button{
+                          color: black;
+                          border: 1px solid black;
+                          padding: .8rem 0;
+                          width: 100%;
+                          border-radius: 2rem;
+                          width: fit-content;
+                          font-size: 1.1rem;
+                          padding: .6rem 4rem;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    footer {
+        p {
+            font-size: 4rem;
         }
     }
 }

@@ -223,14 +223,14 @@ a {
   gap: 1rem;
 }
 .view-2 .card-2:nth-child(3) .top {
-  background-color: #C71E70;
+  background-color: #c71e70;
 }
 .view-2 .card-2:nth-child(4) .top {
-  background-color: #0081C6;
+  background-color: #0081c6;
 }
 .view-2 .card-1 {
   padding: 1.6rem 1.6rem;
-  background-color: #FAEBC5;
+  background-color: #faebc5;
   border-radius: 1rem;
   position: relative;
   overflow: hidden;
@@ -259,7 +259,7 @@ a {
   width: 100%;
   padding: 1rem 1rem 0 1rem;
   display: flex;
-  background-color: #D3A7F2;
+  background-color: #d3a7f2;
   border-radius: 0.4rem;
   justify-content: space-between;
 }
@@ -280,6 +280,113 @@ a {
 }
 .view-2 .card-2 .bottom {
   display: none;
+}
+
+.view-3 {
+  padding: 4rem 0;
+}
+.view-3 .content {
+  background-color: #faebc5;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+}
+.view-3 .content .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-3 .content .top .title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+.view-3 .content .top .card-gallery {
+  display: grid;
+  gap: 1rem;
+}
+.view-3 .content .top .card-gallery .card {
+  padding: 1.8rem 1rem;
+  border-radius: 1rem;
+  text-align: start;
+  letter-spacing: 0.6px;
+}
+.view-3 .content .top .card-gallery .card:nth-child(1) {
+  background-color: #feadd2;
+}
+.view-3 .content .top .card-gallery .card:nth-child(2) {
+  background-color: #ffbe81;
+}
+.view-3 .content .top .card-gallery .card:nth-child(3) {
+  background-color: #ffbe81;
+}
+.view-3 .content .top .card-gallery .card:nth-child(4) {
+  background-color: #feadd2;
+}
+.view-3 .content .top .botton-txt {
+  text-align: center;
+  width: 75%;
+}
+.view-3 .content .bottom {
+  margin-top: 4rem;
+}
+.view-3 .content .bottom .first {
+  display: flex;
+  justify-content: space-between;
+}
+.view-3 .content .bottom .first .div {
+  padding: 1rem 1.5rem;
+  border-radius: 1.6rem 1.6rem 0 0;
+  font-weight: 700;
+}
+.view-3 .content .bottom .first .div:nth-child(1) {
+  background-color: #d8d800;
+}
+.view-3 .content .bottom .first .div:nth-child(2) {
+  background-color: #ffdf2b;
+}
+.view-3 .content .bottom .second {
+  background-color: #d8d800;
+  border-radius: 0 0 1.6rem 1.6rem;
+}
+.view-3 .content .bottom .second .gallery {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.view-3 .content .bottom .second .gallery .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  gap: 1rem;
+}
+.view-3 .content .bottom .second .gallery .item img {
+  width: 3rem;
+}
+.view-3 .content .bottom .second .gallery .item .img-title {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.view-3 .content .bottom .second .bottom {
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 2rem 2rem 2rem;
+}
+.view-3 .content .bottom .second .bottom p {
+  font-weight: 700;
+}
+.view-3 .content .bottom .second .bottom .button {
+  color: black;
+  border: 1px solid black;
+  padding: 0.8rem 0;
+  width: 100%;
+  border-radius: 2rem;
 }
 
 footer p {
@@ -396,7 +503,7 @@ footer p {
   }
   .view-2 .card-1 {
     padding: 2.4rem 2.6rem;
-    background-color: #FAEBC5;
+    background-color: #faebc5;
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
@@ -458,9 +565,98 @@ footer p {
   }
   .view-2 .card-2 .bottom .work p {
     padding: 0.8rem 1.4rem;
-    background-color: #FAEBC5;
+    background-color: #faebc5;
     border-radius: 2rem;
     font-weight: 600;
+  }
+  .view-3 {
+    padding: 2rem 8rem;
+  }
+  .view-3 .content {
+    border-radius: 2rem;
+    padding: 6rem 10rem;
+  }
+  .view-3 .content .top {
+    gap: 2rem;
+  }
+  .view-3 .content .top .heading {
+    font-size: 1.2rem;
+  }
+  .view-3 .content .top .title {
+    font-size: 3.6rem;
+    font-weight: 600;
+    text-align: center;
+    width: 50%;
+  }
+  .view-3 .content .top .card-gallery {
+    gap: 1rem;
+    grid-template-columns: auto auto;
+    padding: 0 12rem;
+  }
+  .view-3 .content .top .card-gallery .card {
+    padding: 1.8rem 1rem;
+    border-radius: 1rem;
+    text-align: start;
+    letter-spacing: 0.6px;
+  }
+  .view-3 .content .top .botton-txt {
+    text-align: center;
+    width: 30%;
+    font-size: 1.6rem;
+    padding-top: 4rem;
+  }
+  .view-3 .content .bottom .first {
+    display: flex;
+    gap: 2rem;
+  }
+  .view-3 .content .bottom .first .div {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 1.6rem 1.6rem 0 0;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .view-3 .content .bottom .second .gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 4rem 2rem;
+  }
+  .view-3 .content .bottom .second .gallery .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 2rem;
+  }
+  .view-3 .content .bottom .second .gallery .item img {
+    width: 4rem;
+  }
+  .view-3 .content .bottom .second .gallery .item .img-title {
+    width: 60%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .view-3 .content .bottom .second .bottom {
+    padding: 0 4rem 4rem 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .view-3 .content .bottom .second .bottom p {
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  .view-3 .content .bottom .second .bottom .button {
+    color: black;
+    border: 1px solid black;
+    padding: 0.8rem 0;
+    width: 100%;
+    border-radius: 2rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.1rem;
+    padding: 0.6rem 4rem;
   }
   footer p {
     font-size: 4rem;
