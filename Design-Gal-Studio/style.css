@@ -389,11 +389,120 @@ a {
   border-radius: 2rem;
 }
 
-footer p {
-  text-align: center;
-  font-size: 2rem;
+.view-4 .container-1 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.view-4 .container-1 .content img {
+  width: 100%;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 12/8;
+  -o-object-position: 48.4% 27.3%;
+     object-position: 48.4% 27.3%;
+}
+.view-4 .container-1 .content .card1 {
+  position: relative;
+  background-color: #ffdf2b;
+  padding: 1.6rem 1.4rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+.view-4 .container-1 .content .card1 .title {
   font-weight: 600;
-  padding-bottom: 3em;
+}
+.view-4 .container-1 .content .card1 .des {
+  margin-top: 4rem;
+  font-weight: 300;
+}
+.view-4 .container-1 .content .card1 .flow {
+  position: absolute;
+  top: -1rem;
+  right: -3rem;
+}
+.view-4 .container-1 .content .card1 .flow svg {
+  width: 130px;
+  height: 120px;
+}
+.view-4 .container-1 .content .card2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.view-4 .container-1 .content .card2 .first {
+  padding: 1.6rem 1.4rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.view-4 .container-1 .content .card2 .first .des {
+  margin-top: 4rem;
+  font-weight: 300;
+}
+.view-4 .container-1 .content .card2 .first:nth-child(1) {
+  background-color: #eeee39;
+}
+.view-4 .container-1 .content .card2 .first:nth-child(2) {
+  background-color: #feadd2;
+}
+.view-4 .container-1 .content-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+.view-4 .container-1 .content-2 .card3 {
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: #faebc5;
+}
+.view-4 .container-1 .content-2 .card3 .title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+.view-4 .container-1 .content-2 .card3 .des {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.view-4 .container-1 .content-2 .card3 .arrow {
+  padding: 2rem 2rem 0 2rem;
+}
+.view-4 .container-1 .content-2 .card4 {
+  padding: 1.6rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d8d800;
+  flex-direction: column;
+  border-radius: 1rem;
+  gap: 1.6rem;
+}
+.view-4 .container-1 .content-2 .card4 .title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.view-4 .container-1 .content-2 .card4 .button {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #eeee39;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  color: black;
+  border-radius: 2rem;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 @media (min-width: 1024px) {
@@ -658,7 +767,138 @@ footer p {
     font-size: 1.1rem;
     padding: 0.6rem 4rem;
   }
-  footer p {
+  .view-4 .container-1 .content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+    border-radius: 2rem;
+  }
+  .view-4 .container-1 .content img {
+    aspect-ratio: 0;
+    grid-column: 1;
+    border-radius: 2rem;
+    grid-row: 1/span 2;
+  }
+  .view-4 .container-1 .content .card1 {
+    position: relative;
+    background-color: #ffdf2b;
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .view-4 .container-1 .content .card1 .title {
+    font-weight: 600;
     font-size: 4rem;
+  }
+  .view-4 .container-1 .content .card1 .heading {
+    font-size: 1.4rem;
+  }
+  .view-4 .container-1 .content .card1 .des {
+    margin-top: 4rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    width: 70%;
+  }
+  .view-4 .container-1 .content .card1 .flow {
+    position: absolute;
+    top: -2rem;
+    right: -3rem;
+  }
+  .view-4 .container-1 .content .card1 .flow svg {
+    width: 200px;
+    height: 200px;
+  }
+  .view-4 .container-1 .content .card2 {
+    display: flex;
+    flex-direction: row;
+    grid-column: 2;
+    grid-row: 2;
+    gap: 2rem;
+  }
+  .view-4 .container-1 .content .card2 .first {
+    padding: 2rem 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .view-4 .container-1 .content .card2 .first .title {
+    width: 80%;
+    font-size: 2rem;
+  }
+  .view-4 .container-1 .content .card2 .first .des {
+    width: 90%;
+    margin-top: 4rem;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  .view-4 .container-1 .content .card2 .first:nth-child(1) {
+    background-color: #eeee39;
+  }
+  .view-4 .container-1 .content .card2 .first:nth-child(2) {
+    background-color: #feadd2;
+  }
+  .view-4 .container-1 .content-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  .view-4 .container-1 .content-2 .card3 {
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    background-color: #faebc5;
+  }
+  .view-4 .container-1 .content-2 .card3 .title {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    width: 60%;
+  }
+  .view-4 .container-1 .content-2 .card3 .des {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    width: 60%;
+  }
+  .view-4 .container-1 .content-2 .card3 .arrow {
+    padding: 2rem 2rem 0 2rem;
+  }
+  .view-4 .container-1 .content-2 .card3 .arrow svg {
+    width: 350px;
+    height: 350px;
+  }
+  .view-4 .container-1 .content-2 .card4 {
+    padding: 3.5rem 2rem;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 2rem;
+    gap: 1.6rem;
+  }
+  .view-4 .container-1 .content-2 .card4 .title {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  .view-4 .container-1 .content-2 .card4 .button {
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: #eeee39;
+    padding: 0.8rem 1.2rem;
+    display: flex;
+    color: black;
+    border-radius: 2rem;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 }

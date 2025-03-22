@@ -371,32 +371,31 @@ a {
                     background-color: #ffdf2b;
                 }
             }
-            .second{
+            .second {
                 background-color: #d8d800;
                 border-radius: 0 0 1.6rem 1.6rem;
-                .gallery{
+                .gallery {
                     display: grid;
-                    grid-template-columns: auto auto ;
-                 
+                    grid-template-columns: auto auto;
 
-                    .item{
+                    .item {
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         flex-direction: column;
                         padding: 1rem 2rem;
                         gap: 1rem;
-                        img{
+                        img {
                             width: 3rem;
                         }
-                        .img-title{
-                            font-size: .8rem;
+                        .img-title {
+                            font-size: 0.8rem;
                             text-align: center;
                         }
                     }
                 }
 
-                .bottom{
+                .bottom {
                     font-weight: 600;
                     text-align: center;
                     display: flex;
@@ -404,16 +403,15 @@ a {
                     align-items: center;
                     gap: 2rem;
                     padding: 0 2rem 2rem 2rem;
-                    p{
+                    p {
                         font-weight: 700;
                     }
-                    .button{
-                      color: black;
-                      border: 1px solid black;
-                      padding: .8rem 0;
-                      width: 100%;
-                      border-radius: 2rem;
-                        
+                    .button {
+                        color: black;
+                        border: 1px solid black;
+                        padding: 0.8rem 0;
+                        width: 100%;
+                        border-radius: 2rem;
                     }
                 }
             }
@@ -421,12 +419,132 @@ a {
     }
 }
 
-footer {
-    p {
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 600;
-        padding-bottom: 3em;
+.view-4 {
+    .container-1 {
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            img {
+                width: 100%;
+                border-radius: 1rem;
+                object-fit: cover;
+                aspect-ratio: 12/8;
+                object-position: 48.4% 27.3%;
+            }
+
+            .card1 {
+                position: relative;
+                background-color: #ffdf2b;
+                padding: 1.6rem 1.4rem;
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: column;
+                overflow-x: hidden;
+                .title {
+                    font-weight: 600;
+                }
+
+                .des {
+                    margin-top: 4rem;
+                    font-weight: 300;
+                }
+                .flow {
+                    position: absolute;
+
+                    top: -1rem;
+                    right: -3rem;
+                    svg {
+                        width: 130px;
+                        height: 120px;
+                    }
+                }
+            }
+
+            .card2 {
+                display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+                .first {
+                    padding: 1.6rem 1.4rem;
+                    border-radius: 1rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    .des {
+                        margin-top: 4rem;
+                        font-weight: 300;
+                    }
+                }
+                .first:nth-child(1) {
+                    background-color: #eeee39;
+                }
+                .first:nth-child(2) {
+                    background-color: #feadd2;
+                }
+            }
+        }
+
+        .content-2 {
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+            margin-top: 0.6rem;
+            .card3 {
+                padding: 2rem 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border-radius: 1rem;
+                background-color: #faebc5;
+
+                .title {
+                    font-size: 2rem;
+                    text-align: center;
+                    font-weight: 700;
+                }
+
+                .des {
+                    margin-top: 1rem;
+                    text-align: center;
+                    font-size: 0.8rem;
+                }
+
+                .arrow {
+                    padding: 2rem 2rem 0 2rem;
+                }
+            }
+
+            .card4 {
+                padding: 1.6rem 1.4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #d8d800;
+                flex-direction: column;
+                border-radius: 1rem;
+                gap: 1.6rem;
+
+                .title {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
+                .button {
+                    width: fit-content;
+                    background-color: #eeee39;
+
+                    padding: 0.8rem 1.2rem;
+                    display: flex;
+                    color: black;
+                    border-radius: 2rem;
+                    align-items: center;
+                    gap: 1rem;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+            }
+        }
     }
 }
 
@@ -634,46 +752,39 @@ footer {
 
     .view-3 {
         padding: 2rem 8rem;
-    
+
         .content {
- 
             border-radius: 2rem;
             padding: 6rem 10rem;
 
-    
             .top {
-          
                 gap: 2rem;
-              
 
-                .heading{
+                .heading {
                     font-size: 1.2rem;
                 }
-    
+
                 .title {
                     font-size: 3.6rem;
                     font-weight: 600;
                     text-align: center;
                     width: 50%;
                 }
-    
+
                 .card-gallery {
-                
                     gap: 1rem;
                     grid-template-columns: auto auto;
                     padding: 0 12rem;
-                
+
                     .card {
                         padding: 1.8rem 1rem;
                         border-radius: 1rem;
                         text-align: start;
-                    
+
                         letter-spacing: 0.6px;
-                       
                     }
-                   
                 }
-    
+
                 .botton-txt {
                     text-align: center;
                     width: 30%;
@@ -681,15 +792,13 @@ footer {
                     padding-top: 4rem;
                 }
             }
-    
+
             .bottom {
-               
-    
                 .first {
                     display: flex;
-                   
+
                     gap: 2rem;
-    
+
                     .div {
                         width: 100%;
                         padding: 1rem 1.5rem;
@@ -698,54 +807,49 @@ footer {
                         text-align: center;
                         font-size: 2rem;
                     }
-    
-                   
                 }
-                .second{
-                   
-                    .gallery{
+                .second {
+                    .gallery {
                         display: grid;
                         grid-template-columns: auto auto auto;
                         padding: 4rem 2rem;
-                     
-    
-                        .item{
+
+                        .item {
                             display: flex;
                             align-items: center;
                             justify-content: center;
                             flex-direction: column;
                             padding: 1rem 2rem;
                             gap: 2rem;
-                            img{
+                            img {
                                 width: 4rem;
                             }
-                            .img-title{
+                            .img-title {
                                 width: 60%;
                                 font-size: 1rem;
                                 text-align: center;
                             }
                         }
                     }
-    
-                    .bottom{
+
+                    .bottom {
                         padding: 0 4rem 4rem 4rem;
                         flex-direction: row;
                         justify-content: space-between;
-                        
-                        p{
+
+                        p {
                             font-weight: 700;
                             font-size: 1.4rem;
                         }
-                        .button{
-                          color: black;
-                          border: 1px solid black;
-                          padding: .8rem 0;
-                          width: 100%;
-                          border-radius: 2rem;
-                          width: fit-content;
-                          font-size: 1.1rem;
-                          padding: .6rem 4rem;
-                            
+                        .button {
+                            color: black;
+                            border: 1px solid black;
+                            padding: 0.8rem 0;
+                            width: 100%;
+                            border-radius: 2rem;
+                            width: fit-content;
+                            font-size: 1.1rem;
+                            padding: 0.6rem 4rem;
                         }
                     }
                 }
@@ -753,11 +857,160 @@ footer {
         }
     }
 
+    .view-4 {
+        .container-1 {
+            .content {
+                display: grid;
+                grid-template-columns: 1fr 2fr; // 2 columns only
+                grid-template-rows: 1fr 1fr; // 2 rows
+                gap: 2rem;
+                border-radius: 2rem;
+                img {
+                    aspect-ratio: 0;
+                    grid-column: 1;
+                    border-radius: 2rem;
+                    grid-row: 1 / span 2; // spans both rows
+                }
 
+                .card1 {
+                    position: relative;
+                    background-color: #ffdf2b;
+                    padding: 2rem 2rem;
+                    border-radius: 2rem;
+                    display: flex;
+                    grid-column: 2;
+                    grid-row: 1; // top right
+                    flex-direction: column;
+                    overflow-x: hidden;
+                    .title {
+                        font-weight: 600;
+                        font-size: 4rem;
+                    }
+                    .heading {
+                        font-size: 1.4rem;
+                    }
 
-    footer {
-        p {
-            font-size: 4rem;
+                    .des {
+                        margin-top: 4rem;
+                        font-weight: 300;
+                        font-size: 1.2rem;
+                        width: 70%;
+                    }
+                    .flow {
+                        position: absolute;
+                        top: -2rem;
+                     
+                        right: -3rem;
+
+                        svg {
+                            width: 200px;
+                            height: 200px;
+                        }
+                    }
+                }
+
+                .card2 {
+                    display: flex;
+                    flex-direction: row;
+                    grid-column: 2;
+                    grid-row: 2;
+                    gap: 2rem;
+
+                    .first {
+                        padding: 2rem 2rem;
+                        border-radius: 2rem;
+                        display: flex;
+
+                        flex-direction: column;
+                        .title {
+                            width: 80%;
+                            font-size: 2rem;
+                        }
+
+                        .des {
+                            width: 90%;
+                            margin-top: 4rem;
+                            font-weight: 300;
+                            font-size: 1rem;
+                        }
+                    }
+                    .first:nth-child(1) {
+                        background-color: #eeee39;
+                    }
+                    .first:nth-child(2) {
+                        background-color: #feadd2;
+                    }
+                }
+            }
+
+            .content-2 {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                margin-top: 2rem;
+                padding-bottom: 4rem;
+                .card3 {
+                    padding: 2rem 3rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    border-radius: 2rem;
+                    background-color: #faebc5;
+
+                    .title {
+                        font-size: 4rem;
+                        text-align: center;
+                        font-weight: 700;
+                        width: 60%;
+                    }
+
+                    .des {
+                        margin-top: 2rem;
+                        text-align: center;
+                        font-size: 1.2rem;
+                        width: 60%;
+                    }
+
+                    .arrow {
+                        padding: 2rem 2rem 0 2rem;
+                        svg{
+                            width: 350px;
+                            height: 350px;
+                        }
+                    }
+                }
+
+                .card4 {
+                    padding: 3.5rem 2rem;
+               
+   
+                    
+                    justify-content: space-between;
+            
+                    flex-direction: row;
+                    border-radius: 2rem;
+                    gap: 1.6rem;
+
+                    .title {
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                    }
+                    .button {
+                        width: fit-content;
+                        background-color: #eeee39;
+
+                        padding: 0.8rem 1.2rem;
+                        display: flex;
+                        color: black;
+                        border-radius: 2rem;
+                        align-items: center;
+                        gap: 1rem;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                    }
+                }
+            }
         }
     }
 }
