@@ -359,6 +359,7 @@ video {
                 gap: 2rem;
                 flex-direction: row;
                 background-color: white;
+                box-shadow: 3px 3px 0.1rem rgba(128, 128, 128, 0.1);
                 align-items: center;
                 justify-content: center;
                 border: 1px solid #0d0e131a;
@@ -515,4 +516,6 @@ video {
             }
         }
     }
+
+    
 }
