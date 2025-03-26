@@ -34,7 +34,6 @@ video {
 
 .view-1 {
   background-color: #09261d;
-  padding-bottom: 10rem;
 }
 .view-1 nav {
   padding: 1rem 0;
@@ -108,8 +107,91 @@ video {
      object-position: center center;
 }
 
+.middle {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+.middle .top {
+  height: 15rem;
+  background-color: #09261d;
+}
+.middle .bottom {
+  height: 15rem;
+  background-color: white;
+}
+.middle .middle-card {
+  width: 100%;
+  padding: 0 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.middle .middle-card .search-wrapper {
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid rgba(13, 14, 19, 0.1019607843);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+.middle .middle-card .search-wrapper .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid rgba(13, 14, 19, 0.1019607843);
+  background-color: white;
+  border-radius: 2rem;
+}
+.middle .middle-card .search-wrapper .search-bar i {
+  color: black;
+}
+.middle .middle-card .search-wrapper .search-bar #search {
+  width: 100%;
+  padding: 0.4rem 0;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+}
+.middle .middle-card .search-wrapper .submit {
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+  flex: 1;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #ff6314;
+  color: white;
+}
+.middle .middle-card .dropdown .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 1rem;
+  background-color: white;
+  border-radius: 2rem;
+}
+.middle .middle-card .dropdown .search-bar i {
+  color: black;
+}
+.middle .middle-card .dropdown .search-bar .button {
+  width: 100%;
+  padding: 0.4rem 0;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 1.1rem;
+  background-color: transparent;
+}
+.middle .middle-card .dropdown .dropdown-content {
+  display: none;
+}
+
 .view-2 {
-  padding-top: 14rem;
   color: black;
   position: relative;
 }
