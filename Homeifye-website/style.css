@@ -237,6 +237,58 @@ video {
   margin-top: 0.4rem;
 }
 
+.view-3 {
+  background-color: #09261d;
+  padding: 4rem 1rem;
+}
+.view-3 .about-us-box {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.view-3 .about-us-box .first-box {
+  position: relative;
+  margin-top: 3rem;
+}
+.view-3 .about-us-box .first-box .flow {
+  position: absolute;
+  right: -1rem;
+  bottom: -1rem;
+  width: 35%;
+  border-radius: 50%;
+}
+.view-3 .about-us-box .second-box .upper-txt {
+  font-size: 1.6rem;
+}
+.view-3 .about-us-box .second-box .title {
+  margin-top: 1rem;
+  font-size: 2.6rem;
+  font-weight: 500;
+  line-height: 1;
+}
+.view-3 .about-us-box .second-box .des {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+}
+.view-3 .about-us-box .second-box .container {
+  padding-bottom: 1rem;
+}
+.view-3 .about-us-box .second-box .container .card {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+.view-3 .about-us-box .second-box .container .card img {
+  width: 15%;
+}
+.view-3 .about-us-box .second-box .container .card .content h1 {
+  font-weight: 500;
+}
+.view-3 .about-us-box .second-box .container .card .content p {
+  margin-top: 0.4rem;
+  line-height: 1.4;
+}
+
 @media (min-width: 1024px) {
   section {
     padding-left: 20rem;
@@ -445,5 +497,65 @@ video {
   }
   .view-2 .container .bottom .card .first:nth-child(2) {
     margin-top: 0.4rem;
+  }
+  .view-3 {
+    background-color: #09261d;
+    padding: 0 20rem;
+  }
+  .view-3 .about-us-box {
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    padding: 10rem 0;
+  }
+  .view-3 .about-us-box .first-box {
+    padding: 0 0;
+    width: 40%;
+    position: relative;
+    margin-top: 0;
+  }
+  .view-3 .about-us-box .first-box img:nth-child(1) {
+    height: auto;
+  }
+  .view-3 .about-us-box .first-box .flow {
+    position: absolute;
+    right: -1rem;
+    bottom: -1rem;
+    width: 35%;
+    border-radius: 50%;
+  }
+  .view-3 .about-us-box .second-box {
+    width: 60%;
+  }
+  .view-3 .about-us-box .second-box .upper-txt {
+    font-size: 1.6rem;
+  }
+  .view-3 .about-us-box .second-box .title {
+    font-size: 4rem;
+  }
+  .view-3 .about-us-box .second-box .des {
+    font-size: 1.2rem;
+    margin-top: 1.6rem;
+    line-height: 1.4;
+  }
+  .view-3 .about-us-box .second-box .container {
+    padding-bottom: 1rem;
+  }
+  .view-3 .about-us-box .second-box .container .card {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+  }
+  .view-3 .about-us-box .second-box .container .card img {
+    width: 10%;
+  }
+  .view-3 .about-us-box .second-box .container .card .content h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
+  .view-3 .about-us-box .second-box .container .card .content p {
+    margin-top: 0.4rem;
+    line-height: 1.4;
+    font-size: 1.1rem;
   }
 }

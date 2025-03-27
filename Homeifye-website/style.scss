@@ -269,6 +269,66 @@ video {
     }
 }
 
+.view-3 {
+    background-color: #09261d;
+    padding: 4rem 1rem;
+    .about-us-box {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .first-box {
+            position: relative;
+            margin-top: 3rem;
+            .flow {
+                position: absolute;
+                right: -1rem;
+                bottom: -1rem;
+                width: 35%;
+                border-radius: 50%;
+            }
+        }
+
+        .second-box {
+            .upper-txt {
+                font-size: 1.6rem;
+            }
+
+            .title {
+                margin-top: 1rem;
+                font-size: 2.6rem;
+                font-weight: 500;
+                line-height: 1;
+            }
+            .des {
+                font-size: 1.1rem;
+                margin-top: 1rem;
+                line-height: 1.4;
+            }
+            .container {
+                padding-bottom: 1rem;
+
+                .card {
+                    margin-top: 2rem;
+                    display: flex;
+                    gap: 1rem;
+                    img {
+                        width: 15%;
+                    }
+                    .content {
+                        h1 {
+                            font-weight: 500;
+                        }
+                        p {
+                            margin-top: 0.4rem;
+                            line-height: 1.4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 1024px) {
     section {
         padding-left: 20rem;
@@ -517,5 +577,69 @@ video {
         }
     }
 
-    
+    .view-3 {
+        background-color: #09261d;
+        padding: 0 20rem;
+        .about-us-box {
+            display: flex;
+            flex-direction: row;
+            gap: 6rem;
+            padding: 10rem 0;
+            .first-box {
+                padding: 0 0;
+                width: 40%;
+                position: relative;
+                margin-top: 0;
+                img:nth-child(1) {
+                    height: auto;
+                }
+                .flow {
+                    position: absolute;
+                    right: -1rem;
+                    bottom: -1rem;
+                    width: 35%;
+                    border-radius: 50%;
+                }
+            }
+
+            .second-box {
+                width: 60%;
+                .upper-txt {
+                    font-size: 1.6rem;
+                }
+
+                .title {
+                    font-size: 4rem;
+                }
+                .des {
+                    font-size: 1.2rem;
+                    margin-top: 1.6rem;
+                    line-height: 1.4;
+                }
+                .container {
+                    padding-bottom: 1rem;
+
+                    .card {
+                        margin-top: 2rem;
+                        display: flex;
+                        gap: 1rem;
+                        img {
+                            width: 10%;
+                        }
+                        .content {
+                            h2 {
+                                font-weight: 500;
+                                font-size: 1.8rem;
+                            }
+                            p {
+                                margin-top: 0.4rem;
+                                line-height: 1.4;
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
