@@ -328,8 +328,69 @@ video {
         }
     }
 }
-.view-4{
+.view-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
     color: black;
+    .heading {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .explore {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2rem;
+        .button {
+            padding: .6rem 1rem;
+            border-radius: 2rem;
+            border: 1px solid orange;
+            color: orange;
+            font-size: 1rem;
+        }
+    }
+
+    .gallery {
+        margin-top: 1rem;
+
+        .card-1 {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 1.5rem;
+            margin-top: 1.5rem;
+            border-bottom: 1px solid gray;
+            gap: 1rem;
+            img {
+                border-radius: 1rem;
+                aspect-ratio: 16/9;
+                object-fit: cover;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+                .title {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+                .des {
+                    color: gray;
+                }
+                .price {
+                    font-size: 1.4rem;
+                    span {
+                        font-size: 0.9rem;
+                        color: gray;
+                    }
+                }
+            }
+        }
+        .card-1:nth-child(3){
+            border-bottom: none;
+        }
+    }
 }
 
 @media (min-width: 1024px) {
@@ -643,6 +704,73 @@ video {
                     }
                 }
             }
+        }
+    }
+
+    .view-4 {
+        padding-left: 20rem;
+        padding-right: 20rem;
+        padding-top: 8rem;
+        color: black;
+        .heading {
+            font-size: 4rem;
+        }
+        .explore {
+         
+            .button {
+                padding: 1rem 2rem;
+                font-size: 1.4rem;
+
+                &:hover{
+                    background-color: orange;
+                    color: white;
+                    transition: .5s;
+                }
+            }
+        }
+        .gallery {
+            margin-top: 2rem;
+            padding-bottom: 2rem;
+            .card-1 {
+                flex-direction: row;
+                padding-bottom: 3rem;
+                margin-top: 3rem;
+     
+                gap: 2rem;
+                flex: 1;
+
+                img {
+                    width: 50%;
+                    border-radius: 1rem;
+                    aspect-ratio: 16/9;
+                }
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.6rem;
+                    width: 50%;
+                    padding: 2rem;
+                    justify-content: space-between;
+
+                    .title {
+                        font-size: 3rem;
+                        font-weight: 500;
+                    }
+                    .des {
+                        color: gray;
+                        font-size: 1.6rem;
+                    }
+                    .price {
+                        font-size: 2rem;
+                        span {
+                            font-size: 1rem;
+                            color: gray;
+                        }
+                    }
+                }
+            }
+
+         
         }
     }
 }
