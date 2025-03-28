@@ -344,16 +344,16 @@ video {
         align-items: center;
         padding-bottom: 2rem;
         .button {
-            padding: .6rem 1rem;
+            padding: 0.6rem 1rem;
             border-radius: 2rem;
             border: 1px solid orange;
             color: orange;
             font-size: 1rem;
 
-            &:hover{
+            &:hover {
                 background-color: orange;
                 color: white;
-                transition: .5s;
+                transition: 0.5s;
             }
         }
     }
@@ -366,6 +366,7 @@ video {
             flex-direction: column;
             padding-bottom: 1.5rem;
             margin-top: 1.5rem;
+            cursor: pointer;
             border-bottom: 1px solid gray;
             gap: 1rem;
             img {
@@ -377,11 +378,32 @@ video {
                 display: flex;
                 flex-direction: column;
                 gap: 0.6rem;
+                position: relative;
+
+                .arrow {
+                    position: absolute;
+                    padding: 1rem;
+                    background-color: black;
+                    border-radius: 50%;
+                    top: 2rem;
+                    right: 2rem;
+                    display: none;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition:
+                        opacity 0.3s ease,
+                        visibility 0.3s ease;
+                    i {
+                        font-size: 2rem;
+                    }
+                }
+
                 .title {
                     font-size: 1.8rem;
                     font-weight: 500;
                 }
                 .des {
+                    margin-top: 1rem;
                     color: gray;
                 }
                 .price {
@@ -392,8 +414,13 @@ video {
                     }
                 }
             }
+
+            &:hover .content .arrow {
+                opacity: 1;
+                visibility: visible;
+            }
         }
-        .card-1:nth-child(3){
+        .card-1:nth-child(3) {
             border-bottom: none;
         }
     }
@@ -722,12 +749,9 @@ video {
             font-size: 4rem;
         }
         .explore {
-         
             .button {
                 padding: 1rem 2rem;
                 font-size: 1.4rem;
-
-              
             }
         }
         .gallery {
@@ -737,7 +761,7 @@ video {
                 flex-direction: row;
                 padding-bottom: 3rem;
                 margin-top: 3rem;
-     
+
                 gap: 2rem;
                 flex: 1;
 
@@ -753,6 +777,10 @@ video {
                     width: 50%;
                     padding: 2rem;
                     justify-content: space-between;
+
+                    .arrow {
+                        display: block;
+                    }
 
                     .title {
                         font-size: 3rem;
@@ -771,8 +799,6 @@ video {
                     }
                 }
             }
-
-         
         }
     }
 }
