@@ -349,6 +349,12 @@ video {
             border: 1px solid orange;
             color: orange;
             font-size: 1rem;
+
+            &:hover{
+                background-color: orange;
+                color: white;
+                transition: .5s;
+            }
         }
     }
 
@@ -721,11 +727,7 @@ video {
                 padding: 1rem 2rem;
                 font-size: 1.4rem;
 
-                &:hover{
-                    background-color: orange;
-                    color: white;
-                    transition: .5s;
-                }
+              
             }
         }
         .gallery {

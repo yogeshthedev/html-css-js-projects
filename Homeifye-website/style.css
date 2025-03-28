@@ -312,6 +312,11 @@ video {
   color: orange;
   font-size: 1rem;
 }
+.view-4 .explore .button:hover {
+  background-color: orange;
+  color: white;
+  transition: 0.5s;
+}
 .view-4 .gallery {
   margin-top: 1rem;
 }
@@ -633,11 +638,6 @@ video {
   .view-4 .explore .button {
     padding: 1rem 2rem;
     font-size: 1.4rem;
-  }
-  .view-4 .explore .button:hover {
-    background-color: orange;
-    color: white;
-    transition: 0.5s;
   }
   .view-4 .gallery {
     margin-top: 2rem;
