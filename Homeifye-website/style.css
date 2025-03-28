@@ -375,6 +375,9 @@ video {
   opacity: 1;
   visibility: visible;
 }
+.view-4 .gallery .card-1:hover .content .title {
+  color: orange;
+}
 .view-4 .gallery .card-1:nth-child(3) {
   border-bottom: none;
 }

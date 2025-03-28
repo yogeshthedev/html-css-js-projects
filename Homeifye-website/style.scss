@@ -418,7 +418,15 @@ video {
             &:hover .content .arrow {
                 opacity: 1;
                 visibility: visible;
+                
             }
+
+            &:hover .content .title {
+          
+                color: orange;
+            }
+
+
         }
         .card-1:nth-child(3) {
             border-bottom: none;
