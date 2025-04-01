@@ -382,6 +382,28 @@ video {
   border-bottom: none;
 }
 
+.view-5 {
+  background-color: #09261d;
+}
+.view-5 .second {
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.view-5 .second h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.view-5 .second .button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+}
+
 @media (min-width: 1024px) {
   section {
     padding-left: 20rem;
@@ -706,4 +728,27 @@ video {
     font-size: 1rem;
     color: gray;
   }
-}
+  .view-5 {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .view-5 .second {
+    padding-bottom: 4rem;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .view-5 .second h4 {
+    width: 80%;
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  .view-5 .second .button {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.8rem 1.6rem;
+    border: 1px solid white;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
