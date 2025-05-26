@@ -9,10 +9,15 @@ body {
   width: 100%;
   height: 100%;
   background-color: black;
+  font-family: "DM Sans", sans-serif;
 }
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+p {
   color: white;
 }
 
@@ -21,7 +26,7 @@ main {
 }
 
 nav .container {
-  padding: 1rem 0;
+  padding: 1rem 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,4 +40,57 @@ nav .container .right-item {
 nav .container .hamburger i {
   font-size: 2rem;
   color: gray;
+}
+
+.section-1 {
+  margin-top: 1rem;
+}
+.section-1 .container {
+  border-radius: 1.4rem;
+  background-image: url(assets/section-1-bg.png);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  text-align: center;
+}
+.section-1 .container .title {
+  width: 70%;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.section-1 .container .des {
+  width: 75%;
+  font-size: 1.1rem;
+}
+.section-1 .container .btn {
+  border: 2px solid #5E2D9C;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  background: linear-gradient(#140A22, #5E2D9C);
+  font-weight: 600;
+  box-shadow: 5px 5px 5px #5E2D9C;
+}
+.section-1 .container .btn:hover {
+  background: #5E2D9C;
+}
+.section-1 .container .trustedby {
+  margin-top: 1rem;
+}
+.section-1 .container .trustedby .heading {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: gray;
+}
+.section-1 .container .trustedby .company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.6rem;
+  gap: 0.8rem;
+}
+.section-1 .container .trustedby .company img {
+  width: 60%;
 }/*# sourceMappingURL=style.css.map */
