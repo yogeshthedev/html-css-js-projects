@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 0 1rem;
+}
+
+nav {
+    .container {
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 4.5rem;
+        }
+        .right-item {
+            display: none;
+        }
+        .hamburger {
+            i {
+               font-size: 2rem;
+                color: gray;
+            }
+        }
+    }
+}
