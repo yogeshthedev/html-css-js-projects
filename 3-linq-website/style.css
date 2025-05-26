@@ -66,15 +66,15 @@ nav .container .hamburger i {
   font-size: 1.1rem;
 }
 .section-1 .container .btn {
-  border: 2px solid #5E2D9C;
+  border: 2px solid #5e2d9c;
   padding: 0.8rem 2rem;
   border-radius: 2rem;
-  background: linear-gradient(#140A22, #5E2D9C);
+  background: linear-gradient(#140a22, #5e2d9c);
   font-weight: 600;
-  box-shadow: 5px 5px 5px #5E2D9C;
+  box-shadow: 5px 5px 5px #5e2d9c;
 }
 .section-1 .container .btn:hover {
-  background: #5E2D9C;
+  background: #5e2d9c;
 }
 .section-1 .container .trustedby {
   margin-top: 1rem;
@@ -93,4 +93,44 @@ nav .container .hamburger i {
 }
 .section-1 .container .trustedby .company img {
   width: 60%;
+}
+
+@media (min-width: 1024px) {
+  main {
+    padding: 0 24rem;
+  }
+  nav .container {
+    padding: 1rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .container .logo {
+    width: 4.8rem;
+  }
+  nav .container .right-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  nav .container .right-item a {
+    font-weight: 500;
+  }
+  nav .container .right-item .btn {
+    border: 2px solid #5e2d9c;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    background: linear-gradient(#140a22, #5e2d9c);
+    font-weight: 600;
+    box-shadow: 5px 5px 5px #5e2d9c;
+  }
+  nav .container .right-item .btn:hover {
+    background: #5e2d9c;
+  }
+  nav .container .right-item a:hover {
+    color: #5e2d9c;
+  }
+  nav .container .hamburger {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

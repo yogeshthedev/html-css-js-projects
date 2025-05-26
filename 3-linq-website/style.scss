@@ -16,7 +16,7 @@ a {
     text-decoration: none;
     color: white;
 }
-p{
+p {
     color: white;
 }
 
@@ -26,7 +26,7 @@ main {
 
 nav {
     .container {
-        padding: 1rem .5rem;
+        padding: 1rem 0.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -59,53 +59,96 @@ nav {
         padding: 3rem 0;
         text-align: center;
 
-       
-        .title{
-            width:70%;
+        .title {
+            width: 70%;
             font-size: 1.6rem;
             font-weight: 700;
         }
-        .des{
-            width:75%;
+        .des {
+            width: 75%;
             font-size: 1.1rem;
         }
 
-        .btn{
-            border: 2px solid #5E2D9C;
-            padding: .8rem 2rem;
+        .btn {
+            border: 2px solid #5e2d9c;
+            padding: 0.8rem 2rem;
             border-radius: 2rem;
-            background: linear-gradient( #140A22,  #5E2D9C);
+            background: linear-gradient(#140a22, #5e2d9c);
             font-weight: 600;
-            box-shadow: 5px 5px 5px #5E2D9C;
+            box-shadow: 5px 5px 5px #5e2d9c;
 
-
-            &:hover{
-                background: #5E2D9C;
-                
+            &:hover {
+                background: #5e2d9c;
             }
-
         }
 
-        .trustedby{
+        .trustedby {
             margin-top: 1rem;
-            .heading{
-                font-size: .9rem;
+            .heading {
+                font-size: 0.9rem;
                 font-weight: 800;
                 color: gray;
             }
 
-            .company{
+            .company {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 margin-top: 1.6rem;
-                gap: .8rem;
-              img{
-                width: 60%;
-              }
+                gap: 0.8rem;
+                img {
+                    width: 60%;
+                }
             }
         }
-
-
     }
 }
+
+@media (min-width: 1024px)  {
+    main {
+        padding: 0 24rem;
+    }
+    
+    nav {
+        .container {
+            padding: 1rem 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            .logo {
+                width: 4.8rem;
+            }
+            .right-item {
+                display: flex;
+                gap: 1.5rem;
+                align-items: center;
+                a{
+                 font-weight: 500;
+                }
+               
+                .btn {
+                    border: 2px solid #5e2d9c;
+                    padding: 0.5rem 1rem;
+                    border-radius: 2rem;
+                    background: linear-gradient(#140a22, #5e2d9c);
+                    font-weight: 600;
+                    box-shadow: 5px 5px 5px #5e2d9c;
+        
+                    &:hover {
+                        background: #5e2d9c;
+                    }
+                }
+
+                a:hover{
+                    color: #5e2d9c;
+                }
+
+            }
+            .hamburger {
+                display: none;
+            }
+        }
+    }
+}
+
