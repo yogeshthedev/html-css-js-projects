@@ -6,5 +6,7 @@ setInterval(() => {
   let min = dt.getMinutes();
   let hour = dt.getHours();
 
-  clock.innerText = `${hour}:${min}:${sec} `;
+  let period = hour > 12 ? "PM" : "AM";
+  hour = hour % 12 || 12;
+  clock.innerText = `${hour}:${min}:${sec} ${period} `;
 }, 1000);
