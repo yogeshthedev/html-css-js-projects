@@ -1,0 +1,42 @@
+let display = document.querySelector("#display");
+
+let start = document.querySelector("#start");
+let pause = document.querySelector("#pause");
+let reset = document.querySelector("#reset");
+
+let sec = 0;
+let min = 0;
+let hr = 0;
+let timer;
+
+function addOne(e){
+  return `0${e}`
+}
+
+start.addEventListener("click", () => {
+  timer = setInterval(() => {
+    sec++;
+    display.innerText = `${addOne(hr)}:${addOne(min)}:${addOne(sec)}`;
+
+    if (sec > 59) {
+      min++;
+      sec = 0;
+    }
+    if (min > 59) {
+      hr++;
+      sec = 0;
+      min = 0;
+    }
+  }, 1000);
+});
+
+pause.addEventListener("click", () => {
+  clearInterval(timer);
+});
+
+reset.addEventListener("click", () => {
+  sec = 0;
+  min=0;
+  display.innerText = `${addOne(hr)}:${addOne(min)}:${addOne(sec)}`;
+  clearInterval(timer);
+});
