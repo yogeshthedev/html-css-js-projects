@@ -9,8 +9,12 @@ let min = 0;
 let hr = 0;
 let timer;
 
-function addOne(e){
-  return `0${e}`
+function addOne(e) {
+  if (e < 10) {
+    return `0${e}`;
+  } else {
+    return e;
+  }
 }
 
 start.addEventListener("click", () => {
@@ -36,7 +40,7 @@ pause.addEventListener("click", () => {
 
 reset.addEventListener("click", () => {
   sec = 0;
-  min=0;
+  min = 0;
   display.innerText = `${addOne(hr)}:${addOne(min)}:${addOne(sec)}`;
   clearInterval(timer);
 });
