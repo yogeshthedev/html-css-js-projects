@@ -32,15 +32,22 @@ start.addEventListener("click", () => {
       min = 0;
     }
   }, 1000);
+
+  start.disabled = true;
 });
 
 pause.addEventListener("click", () => {
   clearInterval(timer);
+  pause.disabled = true
+  start.disabled = false
 });
 
 reset.addEventListener("click", () => {
   sec = 0;
   min = 0;
+  hr = 0;
   display.innerText = `${addOne(hr)}:${addOne(min)}:${addOne(sec)}`;
   clearInterval(timer);
+  pause.disabled = false
+  start.disabled = false;
 });
