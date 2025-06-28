@@ -1,6 +1,7 @@
 let btn = document.querySelector("#change-color");
 let span = document.querySelector("#color");
 let toogleBtn = document.querySelector("#toggle");
+let noti = document.querySelector(".notification");
 
 let r, g, b;
 let isHex = false;
@@ -12,21 +13,26 @@ btn.addEventListener("click", () => {
 
   document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
   rgb = span.innerText = `rgb(${r},${g},${b})`;
-  isHex = false
+  isHex = false;
 });
 
 toogleBtn.addEventListener("click", () => {
+  let rhex = r.toString(16).padStart(2, "0");
+  let ghex = g.toString(16).padStart(2, "0");
+  let bhex = b.toString(16).padStart(2, "0");
+  let hex = `#${rhex}${ghex}${bhex}`;
 
-    let rhex = r.toString(16).padStart(2, "0");
-    let ghex = g.toString(16).padStart(2, "0");
-    let bhex = b.toString(16).padStart(2, "0");
-    let hex = `#${rhex}${ghex}${bhex}`;
+  isHex = !isHex;
+  span.innerText = isHex ? hex : rgb;
+});
 
-    isHex = !isHex;
-    span.innerText = isHex ? hex : rgb;
-  });
-  
+span.addEventListener("click", () => {
+  navigator.clipboard.writeText(span.innerText);
+  noti.style.display = "flex";
+  noti.innerText = "Copied";
 
-  span.addEventListener('click',()=>{
-    navigator.clipboard.writeText(span.innerText);
-  })
+  setTimeout(() => {
+    noti.innerText = "";
+    noti.style.display = "none";
+  }, 1000);
+});
