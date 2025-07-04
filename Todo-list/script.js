@@ -1,7 +1,20 @@
 let task = document.querySelector("#task-input");
 let addTask = document.querySelector("#add-task");
 let taskList = document.querySelector("#task-list");
-let taskCount = document.querySelector("#task-count");
+let taskCount = document.querySelector(".count");
+
+let count = 0;
+
+taskList.addEventListener("click", function (e) {
+  if (e.target.tagName == "LI") {
+    e.target.classList.toggle("completed");
+  } else if (e.target.tagName === "IMG") {
+    e.target.parentElement.remove();
+    if (count > 0) {
+      taskCount.innerText = --count;
+    }
+  }
+});
 
 addTask.addEventListener("click", () => {
   listItem();
@@ -17,9 +30,7 @@ function listItem() {
     liItem.innerText = task.value;
     liItem.append(remove);
     taskList.append(liItem);
-    remove.addEventListener("click", () => {
-      remove.parentElement.remove("li");
-    });
+    taskCount.innerText = ++count;
   }
   task.value = "";
 }
